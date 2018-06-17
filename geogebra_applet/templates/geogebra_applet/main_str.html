@@ -1,0 +1,476 @@
+{% load staticfiles %}
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Skokov Corporate Category Flat Bootstarp Resposive Website Template | Home :: w3layouts</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Skokov Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<script src="js/jquery.min.js"></script>
+<!-- Custom Theme files -->
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<!-- Custom Theme files -->
+<!---- start-smoth-scrolling---->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<!---- start-smoth-scrolling---->
+<!-- webfonts -->
+<link href='http://fonts.googleapis.com/css?family=Arimo:400,700' rel='stylesheet' type='text/css'>
+	<!---- <link rel="stylesheet" href="{% static 'css/geogebra.css' %}">---->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/js/easing.js' %}">
+    <link rel="stylesheet" href="{% static 'css/js/jquery.min.js' %}">
+    <link rel="stylesheet" href="{% static 'css/js/move.top.js' %}">
+    <link rel="stylesheet" href="{% static 'css/js/owl.carousel.js' %}">
+    <link rel="stylesheet" href="{% static 'css/js/responsive-nav.js' %}">
+<!--	<link rel="stylesheet" href="{% static 'images' %}"> -->
+</head>
+<body>
+		<!-- container -->
+		<div id="home" class="header-bg">
+			<div class="container">
+				<!-- header -->
+				<div class="header">
+					<!-- logo -->
+					<div class="logo">
+						<a href="index.html"><img src="{% static 'images/logo.jpg' %}" title="skokov" /></a>
+					</div>
+					<!-- /logo -->
+					<!-- top-nav -->
+
+					<div class="menu">
+						  <a class="toggleMenu" href="#"><img src="{% static 'images/nav.png' %}" alt="" /></a>
+						    <ul class="nav" id="nav">
+						    	<li class="active"><a class="scroll" href="#home">Главная<span> </span></a></li>
+								<li><a class="scroll" href="#services">Сервис<span> </span></a></li>
+								<li><a class="scroll" href="#about">О нас<span> </span></a></li>
+								<li><a href="#news">Определения<span> </span></a></li>
+								<li><a class="scroll" href="#contact">Обратная связь<span> </span></a></li>
+								<div class="clearfix"></div>
+							</ul>
+							<script type="text/javascript" src="js/responsive-nav.js"></script>
+							<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1500);
+				});
+			});
+		</script>
+				    </div>
+					<div class="clearfix"> </div>
+					<!-- /top-nav -->
+				</div>
+				<!-- /header -->
+				<!-- header-info -->
+
+
+
+
+				<div class="header-info">
+					<h1>Учебный сервис по геометрии</h1>
+					<p>В помощь для освоения интерактивных чертежей</p>
+					<ul>
+						<li><a class="r-btn" href="#services">Легкий старт</a></li>
+						<li><a class="d-btn" href="#about">Подробнее</a></li>
+						<div class="clearfix"> </div>
+					</ul>
+				</div>
+				<!-- header-info -->
+				<!-- chart -->
+				<div class="chart">
+					<span> </span>
+				</div>
+				<!-- chart -->
+			</div>
+			<!-- /header-bg -->
+		</div>
+		<!-- services -->
+
+		<div id="services" class="services">
+			<div class="container">
+				<div class="header-section text-center">
+					<h3>Наш сервис</h3>
+					<p>
+</p>
+				</div>
+				<!-- services-grids -->
+				<div class="service-grids">
+
+
+
+
+
+
+		<ul style="list-style-type: decimal">
+            {% for archive in arhives %}
+            <li><a href="{% url 'geogebra_applet:detail' archive.id %}">{{ archive.archive.name }}</a></li>
+            {% endfor %}
+        </ul>
+
+
+
+
+
+
+</div>
+				<!-- services-grids -->
+			</div>
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<!-- services -->
+		<!-- contact-section -->
+		<div class="contact-section text-center">
+			<div class="container">
+				<div class="contact-section-info">
+					<h2>Вы можете связаться с нами в любое время и мы с радостью ответим на все Ваши вопросы</h2>
+					<a class="c-btn" href="#contact">Связаться с нами</a>
+				</div>
+			</div>
+			<div class="contact-section-mask">
+				<span> </span>
+			</div>
+		</div>
+		<!-- contact-section -->
+		<!-- about-section -->
+		<div id="about" class="about-section">
+			<div class="container">
+				<div class="header-section text-center">
+					<h3>О нас</h3>
+					<p>
+Благодаря этому сайту ты сможешь выполнить домашнее задание по геометрии, подсмотрев чертёж, который создал твой учитель. Все чертежи пронумерованы и названы, у тебя не возникнет сложностей. Удачи!</p>
+				</div>
+				<!-- about-section-grids -->
+				<div class="about-section-grids">
+					<div class="col-md-6 about-section-left">
+							<h4>О сервисе<span> </span></h4>
+							<p>Несмотря на ожесточенные дискуссии, консерватизм и инерцию гаджеты и технологии проникают в школу. В России онлайн-сервисы для школьников появились сравнительно недавно, но уже можно назвать несколько очень удачных примеров.</p>
+								<p class="m_5">Наш сервис создан для онлайн помощи школьникам и студентам с решением задач по геометрии. </p>
+
+<p class="m_5">Наша помощь дистанционна и онлайн, то есть ответ на вопрос или обнаружение ошибки Вы получите очень быстро! Мы постоянно стараемся улучшить наш сервис для Вашего удобства.
+							</p>
+
+								<p class="m_5">Благодаря этому сайту ты сможешь выполнить домашнее задание по геометрии, подсмотрев чертёж, который создал твой учитель. Все чертежи пронумерованы и названы, у тебя не возникнет сложностей. Удачи!</p>
+														</div>
+						<div class="col-md-6 about-section-right">
+							<h4>Фигуры<span> </span></h4>
+							<div class="client-grids">
+							 <!-- requried-jsfiles-for owl -->
+							<link href="css/owl.carousel.css" rel="stylesheet">
+							    <script src="js/owl.carousel.js"></script>
+							        <script>
+							    $(document).ready(function() {
+							      $("#owl-demo").owlCarousel({
+							        items : 1,
+							        lazyLoad : true,
+							        autoPlay : true,
+							        navigation : false,
+							        navigationText :  false,
+							        pagination : true,
+							      });
+							    });
+							    </script>
+							 <!-- //requried-jsfiles-for owl -->
+							 <!-- start content_slider -->
+						       <div id="owl-demo" class="owl-carousel text-center">
+					                <div class="item">
+					                	<ul>
+											<li><a href="#"><img src="{% static 'images/client-pic1.jpg' %}" class="img-responsive" title="oracle" /></a></li>
+											<li><a href="#"><img src="{% static 'images/client-pic2.jpg' %}" class="img-responsive" title="Sony" /></a></li>
+											<li><a href="#"><img src="{% static 'images/client-pic3.jpg' %}" class="img-responsive" title="Snadisk" /></a></li>
+											<li><a href="#"><img src="{% static 'images/client-pic4.jpg' %}" class="img-responsive" title="mcafee" /></a></li>
+											<li><a href="#"><img src="{% static 'images/client-pic5.jpg' %}" class="img-responsive" title="Netflix" /></a></li>
+											<li><a href="#"><img src="{% static 'images/client-pic6.jpg' %}" class="img-responsive" title="SAP" /></a></li>
+											<div class="clearfix"> </div>
+										</ul>
+					                </div>
+					                 <div class="item">
+					                	<ul>
+											<li><a href="#"><img src="{% static 'images/client-pic1.jpg' %}" class="img-responsive" title="oracle" /></a></li>
+											<li><a href="#"><img src="{% static 'images/client-pic2.jpg' %}" class="img-responsive" title="Sony" /></a></li>
+											<li><a href="#"><img src="{% static 'images/client-pic3.jpg' %}" class="img-responsive" title="Snadisk" /></a></li>
+											<li><a href="#"><img src="{% static 'images/client-pic4.jpg' %}" class="img-responsive" title="mcafee" /></a></li>
+											<li><a href="#"><img src="{% static 'images/client-pic5.jpg' %}" class="img-responsive" title="Netflix" /></a></li>
+											<li><a href="#"><img src="{% static 'images/client-pic6.jpg' %}" class="img-responsive" title="SAP" /></a></li>
+											<div class="clearfix"> </div>
+										</ul>
+					                </div>
+					                 <div class="item">
+					                	<ul>
+											<li><a href="#"><img src="{% static 'images/client-pic1.jpg' %}" class="img-responsive" title="oracle" /></a></li>
+											<li><a href="#"><img src="{% static 'images/client-pic2.jpg' %}" class="img-responsive" title="Sony" /></a></li>
+											<li><a href="#"><img src="{% static 'images/client-pic3.jpg' %}" class="img-responsive" title="Snadisk" /></a></li>
+											<li><a href="#"><img src="{% static 'images/client-pic4.jpg' %}" class="img-responsive" title="mcafee" /></a></li>
+											<li><a href="#"><img src="{% static 'images/client-pic5.jpg' %}" class="img-responsive" title="Netflix" /></a></li>
+											<li><a href="#"><img src="{% static 'images/client-pic6.jpg' %}" class="img-responsive" title="SAP" /></a></li>
+											<div class="clearfix"> </div>
+										</ul>
+					                </div>
+				              </div>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="clearfix"> </div>
+				<!-- about-section-grids -->
+			</div>
+
+		<!-- about-section -->
+		<!-- team-section -->
+		<div class="team-section">
+			<div class="team-members">
+				<h4>Наши учителя<span> </span></h4>
+				<!-- team-member-grids -->
+				<div class="team-member-grids">
+					<div class="team-member">
+						<div class="team-member-pic">
+							<img src="{% static 'images/team-member1.jpg' %}"  class="img-responsive" title="name" />
+						</div>
+						<div class="team-member-info">
+							<h5>Григорьева Е. Г.</h5>
+							<p><span> Математический анализ</span><label></label></p>
+						</div>
+					</div>
+					<div class="team-member">
+						<div class="team-member-pic">
+							<img src="{% static 'images/team-member2.jpg' %}"  class="img-responsive" title="name" />
+						</div>
+						<div class="team-member-info">
+							<h5>Clark Kent</h5>
+							<p><span> Bad Debt Manager</span><label></label></p>
+						</div>
+					</div>
+					<div class="team-member">
+						<div class="team-member-pic">
+							<img src="{% static 'images/team-member3.jpg' %}"  class="img-responsive" title="name" />
+						</div>
+						<div class="team-member-info">
+							<h5>Clark Kent</h5>
+							<p><span> Bad Debt Manager</span><label>Team Leader</label></p>
+						</div>
+					</div>
+					<div class="team-member">
+						<div class="team-member-pic">
+							<img src="{% static 'images/team-member4.jpg' %}"  class="img-responsive" title="name" />
+						</div>
+						<div class="team-member-info">
+							<h5>Clark Kent</h5>
+							<p><span> Bad Debt Manager</span><label>Team Leader</label></p>
+						</div>
+					</div>
+					<div class="team-member">
+						<div class="team-member-pic">
+							<img src="{% static 'images/team-member5.jpg' %}"  class="img-responsive" title="name" />
+						</div>
+						<div class="team-member-info">
+							<h5>Clark Kent</h5>
+							<p><span> Bad Debt Manager</span><label>Team Leader</label></p>
+						</div>
+					</div>
+					<div class="clearfix"> </div>
+					<div class="team-member">
+						<div class="team-member-pic">
+							<img src="{% static 'images/team-member6.jpg' %}"  class="img-responsive" title="name" />
+						</div>
+						<div class="team-member-info">
+							<h5>Clark Kent</h5>
+							<p><span> Bad Debt Manager</span><label>Team Leader</label></p>
+						</div>
+					</div>
+					<div class="team-member">
+						<div class="team-member-pic">
+							<img src="{% static 'images/team-member7.jpg' %}"  class="img-responsive" title="name" />
+						</div>
+						<div class="team-member-info">
+							<h5>Clark Kent</h5>
+							<p><span> Bad Debt Manager</span><label>Team Leader</label></p>
+						</div>
+					</div>
+					<div class="team-member">
+						<div class="team-member-pic">
+							<img src="{% static 'images/team-member8.jpg' %}"  class="img-responsive" title="name" />
+						</div>
+						<div class="team-member-info">
+							<h5>Clark Kent</h5>
+							<p><span> Bad Debt Manager</span><label>Team Leader</label></p>
+						</div>
+					</div>
+					<div class="team-member">
+						<div class="team-member-pic">
+							<img src="{% static 'images/team-member9.jpg' %}"  class="img-responsive" title="name" />
+						</div>
+						<div class="team-member-info">
+							<h5>Clark Kent</h5>
+							<p><span> Bad Debt Manager</span><label>Team Leader</label></p>
+						</div>
+					</div>
+					<div class="team-member">
+						<div class="team-member-pic">
+							<img src="{% static 'images/team-member10.jpg' %}"  class="img-responsive" title="name" />
+						</div>
+						<div class="team-member-info">
+							<h5>Clark Kent</h5>
+							<p><span> Bad Debt Manager</span><label>Team Leader</label></p>
+						</div>
+					</div>
+				</div>
+				<!-- team-member-grids -->
+			</div>
+		</div>
+		</div>
+		</div>
+		<!-- team-section -->
+		<!-- what-we-do-section -->
+		<div class="what-we-do-section">
+			<div class="container">
+				<div class="what-we-do-section-info text-center">
+					<a class="play" href="#services"><span> </span></a>
+					<h3>Мы заботимся о удобстве учеников</h3>
+					<p>На нашем сервисы Все чертежи пронумерованы и названы, чтоыб облегчить и ускорить освоение материала. Удачи!</p>
+				</div>
+			</div>
+			<div class="what-we-do-mask">
+				<span> </span>
+			</div>
+		</div>
+		<!-- what-we-do-section -->
+		<!-- news-section -->
+		<div id="news" class="news-section">
+			<div class="container">
+				<div class="header-section text-center news-header">
+					<h3>Определения</h3>
+					<p>Геометрические фигуры – это совокупность множества точек, линий, поверхностей или тел, которые расположены на поверхности, плоскости или пространстве и формирует конечное количество линий.</p>
+				</div>
+				<!-- news-grids -->
+				<div class="news-grids">
+					<div class="news-grids-left">
+						<div class="news-left-grid">
+							<div class="news-left-grid-pic">
+								<img src="{% static 'images/news-pic.png' %}"  class="img-responsive" title="name" />
+							</div>
+							<div class="news-left-grid-info">
+								<h4>Определение элипсоида</h4>
+								<label> </label>
+								<p>Поверхность в трёхмерном пространстве, полученная деформацией сферы вдоль трёх взаимно перпендикулярных осей.</p>
+								<span>09.03.2018</span>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+						<div class="news-left-grid">
+							<div class="news-left-grid-info news-left-grid-info-left">
+								<h4>Определение цилиндрическая поверхность</h4>
+								<label> </label>
+								<p> Поверхность второго порядка, образуемая движением прямой вдоль кривой так, что прямая постоянно остаётся параллельной своему начальному положению.</p>
+								<span>08.20.2018</span>
+							</div>
+							<div class="news-left-grid-pic news-left-grid-pic-right">
+								<img src="{% static 'images/news-pic3.png' %}"  class="img-responsive" title="name" />
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+					</div>
+					<div class="news-grids-right">
+						<div class="news-right-grid">
+							<div class="news-right-grid-pic">
+								<img src="{% static 'images/news-pic2.gif' %}"  class="img-responsive" title="name" />
+							</div>
+							<div class="news-right-grid-bottom">
+								<h4>Опеределение конуса</h4>
+								<label> </label>
+								<p>Тело в евклидовом пространстве, полученное объединением всех лучей, исходящих из одной точки (вершины конуса) и проходящих через плоскую поверхность.</p>
+								<span>08.27.2018</span>
+							</div>
+						</div>
+					</div>
+					<div class="clearfix"> </div>
+					<a class="news-btn" href="#">Показать больше</a>
+				</div>
+				<!-- news-grids -->
+			</div>
+		</div>
+		<!-- news-section -->
+		<!-- contact-section -->
+		<div id="contact" class="contact">
+			<div class="container">
+				<div class="contact-grids">
+					<div class="col-md-6 contact-left">
+						<a href="#"><img src="{% static 'images/logo.jpg' %}"  class="img-responsive" title="skokov" /></a>
+						<p>Благодарим Вас за интерес к нашему сервису. Мы постоянно работаем над нашим сервисом, чтобы помочь Вам в освоение материала и облегчить учебу, сделать ее приятной и интересной.</p>
+						<label> </label>
+						<ul>
+							<li><span class="co-icon1"> </span>43 гагарина улица, Волгоград, Россия</li>
+							<li><span class="co-icon2"> </span>+38 (057) 777-05-05</li>
+							<li><span class="co-icon3"> </span><a href="mailto:info(at)fashion.com">service@gmail.com</a></li>
+					   </ul>
+					</div>
+					<div class="col-md-6 contact-right">
+						<h4>Контакты<span> </span></h4>
+						<p>Вы можете связаться с нашими специалистами в любое время</p>
+						<form>
+							<input type="text" class="text" value="Ваше имя" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Ваша фамилия';}">
+							<input type="text" class="text" value="Ваш Email " onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Your Email here';}">
+							<input type="text" class="text" value="Ваше обращение" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Ваше обращение';}">
+							<textarea>Ваше обращение </textarea>
+							<input type="submit" value="Отправить">
+						</form>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+		</div>
+		<!-- contact-section -->
+		<!-- footer -->
+		<div class="footer">
+			<div class="container">
+				<div class="footer-left">
+					<p>Разработано<a href="/"> дружной командой</a></p>
+				</div>
+				<div class="footer-right">
+					<ul>
+						<li><a href="#"><span class="in"> </span></a></li>
+						<li><a href="#"><span class="face"> </span></a></li>
+						<li><a href="#"><span class="twitter"> </span></a></li>
+						<li><a href="#"><span class="you"> </span></a></li>
+						<div class="clearfix"> </div>
+					</ul>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+		<script type="text/javascript">
+									$(document).ready(function() {
+										/*
+										var defaults = {
+								  			containerID: 'toTop', // fading element id
+											containerHoverID: 'toTopHover', // fading element hover id
+											scrollSpeed: 1200,
+											easingType: 'linear'
+								 		};
+										*/
+
+										$().UItoTop({ easingType: 'easeOutQuart' });
+
+									});
+								</script>
+									<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+		<!-- footer -->
+		<!-- /container -->
+	</body>
+</html>
+
