@@ -2,7 +2,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Skokov Corporate Category Flat Bootstarp Resposive Website Template | Home :: w3layouts</title>
+<title>Geometrika</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Skokov Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template,
@@ -38,7 +38,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="header">
 					<!-- logo -->
 					<div class="logo">
-						<a href="index.html"><img src="{% static 'images/logo.jpg' %}" title="skokov" /></a>
+						<a href="#"><img src="{% static 'images/logo.png' %}" title="geometrika" /></a>
 					</div>
 					<!-- /logo -->
 					<!-- top-nav -->
@@ -46,11 +46,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class="menu">
 						  <a class="toggleMenu" href="#"><img src="{% static 'images/nav.png' %}" alt="" /></a>
 						    <ul class="nav" id="nav">
-						    	<li class="active"><a class="scroll" href="#home">Главная<span> </span></a></li>
-								<li><a class="scroll" href="#services">Сервис<span> </span></a></li>
-								<li><a class="scroll" href="#about">О нас<span> </span></a></li>
-								<li><a href="#news">Определения<span> </span></a></li>
-								<li><a class="scroll" href="#contact">Обратная связь<span> </span></a></li>
+						    	<li class="active"><a class="scroll" href="#home"><strong>Главная</strong><span> </span></a></li>
+								<li><a class="scroll" href="#services"><strong>Сервис</strong><span> </span></a></li>
+								<li><a class="scroll" href="#about"><strong>О нас</strong><span> </span></a></li>
+								<li><a href="#news"><strong>Определения</strong><span> </span></a></li>
+								<li><a class="scroll" href="#contact"><strong>Обратная связь</strong><span> </span></a></li>
 								<div class="clearfix"></div>
 							</ul>
 							<script type="text/javascript" src="js/responsive-nav.js"></script>
@@ -73,8 +73,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 
 				<div class="header-info">
-					<h1>Учебный сервис по геометрии</h1>
-					<p>В помощь для освоения интерактивных чертежей</p>
+					<h1><strong>Учебный сервис по геометрии</strong></h1>
+					<p><strong><strong>В помощь для освоения интерактивных чертежей</strong></strong></p>
 					<ul>
 						<li><a class="r-btn" href="#services">Легкий старт</a></li>
 						<li><a class="d-btn" href="#about">Подробнее</a></li>
@@ -102,38 +102,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<!-- services-grids -->
 				<div class="service-grids">
 
-
-
-
-
-
 		<ul style="list-style-type: decimal">
             {% for archive in arhives %}
             <li><a href="{% url 'geogebra_applet:detail' archive.id %}">{{ archive.archive.name }}</a></li>
             {% endfor %}
         </ul>
 
-
-
-
-
-
 </div>
 				<!-- services-grids -->
 			</div>
 		</div>
-
-
-
-
-
-
-
-
-
-
-
-
 
 		<!-- services -->
 		<!-- contact-section -->
@@ -171,6 +149,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 														</div>
 						<div class="col-md-6 about-section-right">
 							<h4>Фигуры<span> </span></h4>
+
 							<div class="client-grids">
 							 <!-- requried-jsfiles-for owl -->
 							<link href="css/owl.carousel.css" rel="stylesheet">
@@ -189,7 +168,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							    </script>
 							 <!-- //requried-jsfiles-for owl -->
 							 <!-- start content_slider -->
-						       <div id="owl-demo" class="owl-carousel text-center">
+						      <div id="owl-demo" class="owl-carousel text-center">
 					                <div class="item">
 					                	<ul>
 											<li><a href="#"><img src="{% static 'images/client-pic1.jpg' %}" class="img-responsive" title="oracle" /></a></li>
@@ -243,8 +222,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<img src="{% static 'images/team-member1.jpg' %}"  class="img-responsive" title="name" />
 						</div>
 						<div class="team-member-info">
-							<h5>Григорьева Е. Г.</h5>
-							<p><span> Математический анализ</span><label></label></p>
+							<h5>Клячин В.А.</h5>
+							<p><span> Моделирование и программирование в среде Blender</span><label></label></p>
 						</div>
 					</div>
 					<div class="team-member">
@@ -252,8 +231,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<img src="{% static 'images/team-member2.jpg' %}"  class="img-responsive" title="name" />
 						</div>
 						<div class="team-member-info">
-							<h5>Clark Kent</h5>
-							<p><span> Bad Debt Manager</span><label></label></p>
+							<h5>Штельмах Т.В.</h5>
+							<p><span> Дискретная математика</span><label></label></p>
 						</div>
 					</div>
 					<div class="team-member">
@@ -261,8 +240,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<img src="{% static 'images/team-member3.jpg' %}"  class="img-responsive" title="name" />
 						</div>
 						<div class="team-member-info">
-							<h5>Clark Kent</h5>
-							<p><span> Bad Debt Manager</span><label>Team Leader</label></p>
+							<h5>Помельников Ю.В.</h5>
+							<p><span> Объектно-ориентированные языки программирования</span><label></label></p>
 						</div>
 					</div>
 					<div class="team-member">
@@ -270,8 +249,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<img src="{% static 'images/team-member4.jpg' %}"  class="img-responsive" title="name" />
 						</div>
 						<div class="team-member-info">
-							<h5>Clark Kent</h5>
-							<p><span> Bad Debt Manager</span><label>Team Leader</label></p>
+							<h5>Попов В.В.</h5>
+							<p><span> Алгебра и теория чисел</span><label></label></p>
 						</div>
 					</div>
 					<div class="team-member">
@@ -279,8 +258,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<img src="{% static 'images/team-member5.jpg' %}"  class="img-responsive" title="name" />
 						</div>
 						<div class="team-member-info">
-							<h5>Clark Kent</h5>
-							<p><span> Bad Debt Manager</span><label>Team Leader</label></p>
+							<h5>Светлов А.В.</h5>
+							<p><span> Математический анализ</span><label></label></p>
 						</div>
 					</div>
 					<div class="clearfix"> </div>
@@ -289,8 +268,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<img src="{% static 'images/team-member6.jpg' %}"  class="img-responsive" title="name" />
 						</div>
 						<div class="team-member-info">
-							<h5>Clark Kent</h5>
-							<p><span> Bad Debt Manager</span><label>Team Leader</label></p>
+							<h5>Кондрашов А.Н.</h5>
+							<p><span> Системы искусственного интеллекта</span><label></label></p>
 						</div>
 					</div>
 					<div class="team-member">
@@ -298,8 +277,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<img src="{% static 'images/team-member7.jpg' %}"  class="img-responsive" title="name" />
 						</div>
 						<div class="team-member-info">
-							<h5>Clark Kent</h5>
-							<p><span> Bad Debt Manager</span><label>Team Leader</label></p>
+							<h5>Зенович А.В.</h5>
+							<p><span> Алгоритмы и структуры данных</span><label></label></p>
 						</div>
 					</div>
 					<div class="team-member">
@@ -341,8 +320,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="container">
 				<div class="what-we-do-section-info text-center">
 					<a class="play" href="#services"><span> </span></a>
-					<h3>Мы заботимся о удобстве учеников</h3>
-					<p>На нашем сервисы Все чертежи пронумерованы и названы, чтоыб облегчить и ускорить освоение материала. Удачи!</p>
+					<h3>Мы заботимся об удобстве учеников</h3>
+					<p>На нашем сервисе Все чертежи пронумерованы и названы, чтобы облегчить и ускорить освоение материала. Удачи!</p>
 				</div>
 			</div>
 			<div class="what-we-do-mask">
@@ -377,7 +356,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<h4>Определение цилиндрическая поверхность</h4>
 								<label> </label>
 								<p> Поверхность второго порядка, образуемая движением прямой вдоль кривой так, что прямая постоянно остаётся параллельной своему начальному положению.</p>
-								<span>08.20.2018</span>
+								<span>08.04.2018</span>
 							</div>
 							<div class="news-left-grid-pic news-left-grid-pic-right">
 								<img src="{% static 'images/news-pic3.png' %}"  class="img-responsive" title="name" />
@@ -394,7 +373,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<h4>Опеределение конуса</h4>
 								<label> </label>
 								<p>Тело в евклидовом пространстве, полученное объединением всех лучей, исходящих из одной точки (вершины конуса) и проходящих через плоскую поверхность.</p>
-								<span>08.27.2018</span>
+								<span>07.05.2018</span>
 							</div>
 						</div>
 					</div>
@@ -410,12 +389,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="container">
 				<div class="contact-grids">
 					<div class="col-md-6 contact-left">
-						<a href="#"><img src="{% static 'images/logo.jpg' %}"  class="img-responsive" title="skokov" /></a>
-						<p>Благодарим Вас за интерес к нашему сервису. Мы постоянно работаем над нашим сервисом, чтобы помочь Вам в освоение материала и облегчить учебу, сделать ее приятной и интересной.</p>
+						<a href="#"><img src="{% static 'images/logo.png' %}"  class="img-responsive" title="geometrika" /></a>
+						<p>Благодарим Вас за интерес к нашему сервису. Мы постоянно работаем над нашим сервисом, чтобы помочь Вам в освоении материала и облегчить учебу, сделать ее приятной и интересной.</p>
 						<label> </label>
 						<ul>
-							<li><span class="co-icon1"> </span>43 гагарина улица, Волгоград, Россия</li>
-							<li><span class="co-icon2"> </span>+38 (057) 777-05-05</li>
+							<li><span class="co-icon1"> </span>Россия, Волгоград, пр-т Университетский, 100</li>
+							<li><span class="co-icon2"> </span>+8 (8442) 40‑55-47</li>
 							<li><span class="co-icon3"> </span><a href="mailto:info(at)fashion.com">service@gmail.com</a></li>
 					   </ul>
 					</div>
@@ -425,7 +404,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<form>
 							<input type="text" class="text" value="Ваше имя" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Ваша фамилия';}">
 							<input type="text" class="text" value="Ваш Email " onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Your Email here';}">
-							<input type="text" class="text" value="Ваше обращение" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Ваше обращение';}">
+							<input type="text" class="text" value="Ваше обращение" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Тема обращения';}">
 							<textarea>Ваше обращение </textarea>
 							<input type="submit" value="Отправить">
 						</form>
@@ -439,7 +418,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="footer">
 			<div class="container">
 				<div class="footer-left">
-					<p>Разработано<a href="/"> дружной командой</a></p>
+					<p>Разработано<a href="/"> Федотовой А.В.</a></p>
 				</div>
 				<div class="footer-right">
 					<ul>
