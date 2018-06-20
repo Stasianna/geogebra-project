@@ -162,15 +162,17 @@ input [type="text"],input [type="submit"],input [type="button"],textarea{
 	padding:0;
 	width:100%;
 	line-height: 1.1em;
+	text-shadow: #fa3010 0 0 20px;
 }
 .header-info p{
 	color: #FFF;
-	font-size: 0.875em;
+	font-size: 1.1em;
 	font-weight: normal;
 	margin: 1.5em 0 2em;
 	padding: 0;
 	width: 70%;
 	line-height: 1.8em;
+	text-shadow: #fa3010 0 0 20px;
 }
 .header-info ul{
 	margin:0;
@@ -196,7 +198,7 @@ a.r-btn:hover{
 	background:#343434;
 }
 a.d-btn{
-	background:#343434;
+	background:#fe504f;
 	color:#FFF;
 	padding:0.8em 1.5em;
 	display:inline-block;
@@ -214,7 +216,7 @@ a.d-btn{
 	line-height: 1.6em;
 }
 a.d-btn:hover{
-	background:#fe504f;
+	background:#343434;
 }
 /*-- chart --*/
 .chart span{

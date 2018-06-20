@@ -746,7 +746,7 @@ pre code {
 }
 @media (min-width: 992px) {
   .container {
-    width: 970px;
+    width: 992px;
   }
 }
 @media (min-width: 1200px) {
@@ -1106,8 +1106,10 @@ pre code {
   .col-md-7 {
     width: 58.33333333%;
   }
+  @media (min-width: 992px)
   .col-md-6 {
-    width: 50%;
+    width: 100%;
+    text-align: justify;
   }
   .col-md-5 {
     width: 41.66666667%;
