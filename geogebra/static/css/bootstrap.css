@@ -1109,7 +1109,7 @@ pre code {
   }
   @media (min-width: 992px)
   .col-md-6 {
-    width: 100%;
+    width: 200%;
     text-align: justify;
   }
   .col-md-5 {

@@ -20,6 +20,5 @@ class MainPageView(TemplateView):
 def ViewHtml(request, file):
     copymodel = GeogebraApplet.objects.filter(id = file).first()
     f = copymodel.index_file.open(mode="rb")
-    #return HttpResponse(f.readlines())
-    #return response_redirect(copymodel.index_file.url)
     return render_to_response(copymodel.index_file.url)
+
